@@ -121,14 +121,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="JimWendler5_3_1.cpp" />
     <ClCompile Include="MainPage.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="JimWendler5_3_1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MainPage.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="JimWendler5_3_1.resx">
+      <DependentUpon>JimWendler5_3_1.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.h</DependentUpon>
     </EmbeddedResource>

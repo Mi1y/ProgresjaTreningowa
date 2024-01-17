@@ -1,4 +1,5 @@
 #pragma once
+#include "JimWendler5_3_1.h"
 
 namespace PlanTreningowy {
 
@@ -60,15 +61,20 @@ namespace PlanTreningowy {
 
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Button^ button3;
 
 
 
 	protected:
 
 	private:
+		
 		/// <summary>
 		/// Wymagana zmienna projektanta.
 		/// </summary>
+		JimWendler5_3_1^ page_5_3_1_JimWendler;
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -92,11 +98,14 @@ namespace PlanTreningowy {
 			this->Week = (gcnew System::Windows::Forms::TextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// Squat
 			// 
-			this->Squat->Location = System::Drawing::Point(12, 70);
+			this->Squat->Location = System::Drawing::Point(12, 51);
 			this->Squat->Multiline = true;
 			this->Squat->Name = L"Squat";
 			this->Squat->Size = System::Drawing::Size(163, 31);
@@ -105,18 +114,17 @@ namespace PlanTreningowy {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(156, 365);
+			this->button1->Location = System::Drawing::Point(19, 364);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(92, 38);
 			this->button1->TabIndex = 3;
 			this->button1->Text = L"Zapisz";
-			this->button1->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MainPage::Zapisz_Click);
 			// 
 			// BenchPress
 			// 
-			this->BenchPress->Location = System::Drawing::Point(12, 133);
+			this->BenchPress->Location = System::Drawing::Point(12, 114);
 			this->BenchPress->Multiline = true;
 			this->BenchPress->Name = L"BenchPress";
 			this->BenchPress->Size = System::Drawing::Size(163, 31);
@@ -125,7 +133,7 @@ namespace PlanTreningowy {
 			// 
 			// Deadlift
 			// 
-			this->Deadlift->Location = System::Drawing::Point(12, 199);
+			this->Deadlift->Location = System::Drawing::Point(12, 180);
 			this->Deadlift->Multiline = true;
 			this->Deadlift->Name = L"Deadlift";
 			this->Deadlift->Size = System::Drawing::Size(163, 31);
@@ -135,7 +143,7 @@ namespace PlanTreningowy {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(12, 255);
+			this->label1->Location = System::Drawing::Point(12, 214);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(66, 16);
 			this->label1->TabIndex = 9;
@@ -144,7 +152,7 @@ namespace PlanTreningowy {
 			// radioButton1
 			// 
 			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(12, 274);
+			this->radioButton1->Location = System::Drawing::Point(12, 233);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(66, 20);
 			this->radioButton1->TabIndex = 10;
@@ -156,7 +164,7 @@ namespace PlanTreningowy {
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(12, 300);
+			this->radioButton2->Location = System::Drawing::Point(12, 259);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(56, 20);
 			this->radioButton2->TabIndex = 11;
@@ -168,7 +176,7 @@ namespace PlanTreningowy {
 			// radioButton3
 			// 
 			this->radioButton3->AutoSize = true;
-			this->radioButton3->Location = System::Drawing::Point(12, 326);
+			this->radioButton3->Location = System::Drawing::Point(12, 285);
 			this->radioButton3->Name = L"radioButton3";
 			this->radioButton3->Size = System::Drawing::Size(66, 20);
 			this->radioButton3->TabIndex = 12;
@@ -180,7 +188,7 @@ namespace PlanTreningowy {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(16, 51);
+			this->label2->Location = System::Drawing::Point(16, 32);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(42, 16);
 			this->label2->TabIndex = 13;
@@ -190,7 +198,7 @@ namespace PlanTreningowy {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(12, 114);
+			this->label3->Location = System::Drawing::Point(12, 95);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(83, 16);
 			this->label3->TabIndex = 14;
@@ -199,7 +207,7 @@ namespace PlanTreningowy {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(12, 180);
+			this->label4->Location = System::Drawing::Point(12, 161);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(53, 16);
 			this->label4->TabIndex = 15;
@@ -207,7 +215,7 @@ namespace PlanTreningowy {
 			// 
 			// Week
 			// 
-			this->Week->Location = System::Drawing::Point(181, 274);
+			this->Week->Location = System::Drawing::Point(12, 327);
 			this->Week->Name = L"Week";
 			this->Week->Size = System::Drawing::Size(100, 22);
 			this->Week->TabIndex = 16;
@@ -216,7 +224,7 @@ namespace PlanTreningowy {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(178, 255);
+			this->label5->Location = System::Drawing::Point(9, 308);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(58, 16);
 			this->label5->TabIndex = 17;
@@ -225,18 +233,49 @@ namespace PlanTreningowy {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(136, 9);
+			this->label6->Location = System::Drawing::Point(12, 9);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(114, 16);
 			this->label6->TabIndex = 18;
 			this->label6->Text = L"Progresja Liniowa";
 			this->label6->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(238, 70);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(136, 30);
+			this->button2->TabIndex = 19;
+			this->button2->Text = L"5/3/1 Jim Wendler";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MainPage::JimWendler_5_3_1_Click);
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(222, 51);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(166, 16);
+			this->label7->TabIndex = 20;
+			this->label7->Text = L"Plan rozwoju treningowego\r\n";
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(238, 106);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(136, 28);
+			this->button3->TabIndex = 21;
+			this->button3->Text = L"Regresja Liniowa";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
 			// MainPage
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(400, 400);
+			this->ClientSize = System::Drawing::Size(400, 440);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->Week);
@@ -253,6 +292,7 @@ namespace PlanTreningowy {
 			this->Controls->Add(this->Squat);
 			this->Name = L"MainPage";
 			this->Text = L"MainPage";
+			this->Load += gcnew System::EventHandler(this, &MainPage::MainPage_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -328,5 +368,11 @@ namespace PlanTreningowy {
 
 		plik1->Close();
 	}
+	private: System::Void JimWendler_5_3_1_Click(System::Object^ sender, System::EventArgs^ e) {
+		page_5_3_1_JimWendler = gcnew JimWendler5_3_1;
+		page_5_3_1_JimWendler->ShowDialog();
+	}
+private: System::Void MainPage_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
