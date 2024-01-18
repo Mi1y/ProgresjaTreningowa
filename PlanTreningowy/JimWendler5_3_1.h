@@ -473,7 +473,6 @@ namespace PlanTreningowy {
 			this->label28->Size = System::Drawing::Size(180, 16);
 			this->label28->TabIndex = 58;
 			this->label28->Text = L"150 x 5 x 0,0333 + 150= 175 kg";
-			this->label28->Click += gcnew System::EventHandler(this, &JimWendler5_3_1::label28_Click);
 			// 
 			// JimWendler5_3_1
 			// 
