@@ -98,6 +98,7 @@ namespace PlanTreningowy {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(JimWendler5_3_1::typeid));
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->Cykle = (gcnew System::Windows::Forms::TextBox());
@@ -515,6 +516,7 @@ namespace PlanTreningowy {
 			this->Controls->Add(this->BenchPress);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->Squat);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"JimWendler5_3_1";
 			this->Text = L"JimWendler5_3_1";
 			this->Load += gcnew System::EventHandler(this, &JimWendler5_3_1::JimWendler5_3_1_Load);
